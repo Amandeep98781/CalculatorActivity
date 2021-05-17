@@ -1,0 +1,47 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CalculatorTest2 {
+
+	@Test
+	void testTestAdd() {
+		Calculator c  = new Calculator();
+		int num1 = 2;
+		int num2 = 2;
+		int expected = 4;
+		int actual = c.add(num1, num2);
+		assertEquals(expected,actual);
+	}
+
+	@Test
+	void testTestMultiply() {
+		Calculator c  = new Calculator();
+		int num1 = 2;
+		int num2 = 2;
+		int expected = 4;
+		int actual = c.multiply(num1, num2);
+		assertEquals(expected,actual);
+	}
+
+	@Test
+	void testTestDivision() {
+		Calculator c  = new Calculator();
+		int num1 = 2;
+		int num2 = 2;
+		int expected = 1;
+		int actual = c.division(num1, num2);
+		assertEquals(expected,actual);
+	}
+
+	@Test
+	void testTestSubstraction() {
+		Calculator c  = new Calculator();
+		int num1 = 2;
+		int num2 = 2;
+		int expected = 0;
+		int actual = c.substraction(num1, num2);
+		assertEquals(expected,actual);
+	}
+
+}
